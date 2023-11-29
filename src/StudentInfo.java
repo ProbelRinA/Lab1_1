@@ -6,14 +6,19 @@ public class StudentInfo
     {
         Scanner scanner = new Scanner(System.in); //Tworzymy obiekt klasy Scanner do wczytywania danych z klawiatury
 
-        System.out.print("Name: "); //Wyświetlamy komunikat zachęcający użytkownika do wprowadzenia imienia
+        System.out.print("Name: "); //Wyświetlamy komunikat zachęcający użytkownika do wprowadzenia dane
         String name = scanner.nextLine(); //Wczytujemy wprowadzone imię do zmiennej
-        System.out.print("Surname: "); //To samo dla pobierania od użytkownika nazwiska
-        String surname = scanner.nextLine(); //Wczytujemy wprowadzone nazwisko do zmiennej
-        System.out.print("Group Number: "); //To samo dla pobierania od użytkownika numer grupy
-        int groupnumber = scanner.nextInt(); //Wczytujemy wprowadzony numer do zmiennej
+        System.out.print("Surname: ");
+        String surname = scanner.nextLine();
+        System.out.print("Specialization: ");
+        String specialization = scanner.nextLine();
+        System.out.print("ID: ");
+        int ID = scanner.nextInt();
+        System.out.print("Year: ");
+        int year = scanner.nextInt();
 
-        System.out.println("Student Info: " + name + " " + surname + " Group " + groupnumber); //Wyświetlamy wprowadzone informacje
+        //Wyświetlamy wprowadzone informacje
+        System.out.println("\nStudent Info: " + "\nName: " + name + "\nSurname: " + surname + "\nSpecialization: " + specialization + "\nID: " + ID + "\nYear: " + year);
 
         scanner.close(); //Zamykamy obiekt Scanner
     }
