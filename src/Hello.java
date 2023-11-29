@@ -4,6 +4,6 @@ public class Hello
     public static void main(String[] args)
     {
         //Wypisujemy tekst
-        System.out.println("Żaneta Julia Group 12");
+        System.out.println("Hello world!");
     }
 }
